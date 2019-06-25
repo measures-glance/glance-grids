@@ -219,11 +219,19 @@ def run_ogr2ogr(src, dst, dst_crs=None, dst_format='ESRI Shapefile',
 def write_grid_specs(grids, dest):
     """ Write grid definitions to a filename
     """
-    grid_info = {continent: grids[continent].to_dict() for continent in grids}
+    grid_info = {
+        continent: grids[continent].to_dict()
+        for continent in grids
+    }
+
+    # Don't use anchors/aliases in dump
+    # https://github.com/yaml/pyyaml/issues/103
+    yaml.SafeDumper.ignore_aliases = lambda *args, **kwds: True
 
     Path(dest).parent.mkdir(exist_ok=True, parents=True)
     with open(str(dest), 'w') as dst:
-        yaml.safe_dump(grid_info, stream=dst)
+        yaml.safe_dump(grid_info, stream=dst, sort_keys=False)
+
     return dest
 
 
