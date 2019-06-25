@@ -1,0 +1,119 @@
+AF:
+  crs: PROJCS["BU MEaSUREs Lambert Azimuthal Equal Area - AF - V01",GEOGCS["GCS_WGS_1984",DATUM["D_WGS_1984",SPHEROID["WGS_1984",6378137.0,298.257223563]],PRIMEM["Greenwich",0.0],UNIT["degree",0.0174532925199433]],PROJECTION["Lambert_Azimuthal_Equal_Area"],PARAMETER["false_easting",0.0],PARAMETER["false_northing",0.0],PARAMETER["longitude_of_center",20],PARAMETER["latitude_of_center",5],UNIT["meter",1.0]]
+  limits:
+  - - 0
+    - 60
+  - &id001
+    - 0
+    - 74
+  name: BU MeaSUREs GLANCE Grids V01 - AF
+  res:
+  - 30
+  - 30
+  size:
+  - 5000
+  - 5000
+  ul:
+  - -5312270.0
+  - 3707205.0
+AN:
+  crs: PROJCS["BU MEaSUREs Lambert Azimuthal Equal Area - AN - V01",GEOGCS["GCS_WGS_1984",DATUM["D_WGS_1984",SPHEROID["WGS_1984",6378137.0,298.257223563]],PRIMEM["Greenwich",0.0],UNIT["degree",0.0174532925199433]],PROJECTION["Lambert_Azimuthal_Equal_Area"],PARAMETER["false_easting",0.0],PARAMETER["false_northing",0.0],PARAMETER["longitude_of_center",0],PARAMETER["latitude_of_center",-90],UNIT["meter",1.0]]
+  limits:
+  - - 0
+    - 56
+  - - 0
+    - 62
+  name: BU MeaSUREs GLANCE Grids V01 - AN
+  res:
+  - 30
+  - 30
+  size:
+  - 5000
+  - 5000
+  ul:
+  - -3662210.0
+  - 5169375.0
+AS:
+  crs: PROJCS["BU MEaSUREs Lambert Azimuthal Equal Area - AS - V01",GEOGCS["GCS_WGS_1984",DATUM["D_WGS_1984",SPHEROID["WGS_1984",6378137.0,298.257223563]],PRIMEM["Greenwich",0.0],UNIT["degree",0.0174532925199433]],PROJECTION["Lambert_Azimuthal_Equal_Area"],PARAMETER["false_easting",0.0],PARAMETER["false_northing",0.0],PARAMETER["longitude_of_center",100],PARAMETER["latitude_of_center",45],UNIT["meter",1.0]]
+  limits:
+  - - 0
+    - 66
+  - - 0
+    - 77
+  name: BU MeaSUREs GLANCE Grids V01 - AS
+  res:
+  - 30
+  - 30
+  size:
+  - 5000
+  - 5000
+  ul:
+  - -4805840.0
+  - 5190735.0
+EU:
+  crs: PROJCS["BU MEaSUREs Lambert Azimuthal Equal Area - EU - V01",GEOGCS["GCS_WGS_1984",DATUM["D_WGS_1984",SPHEROID["WGS_1984",6378137.0,298.257223563]],PRIMEM["Greenwich",0.0],UNIT["degree",0.0174532925199433]],PROJECTION["Lambert_Azimuthal_Equal_Area"],PARAMETER["false_easting",0.0],PARAMETER["false_northing",0.0],PARAMETER["longitude_of_center",20],PARAMETER["latitude_of_center",55],UNIT["meter",1.0]]
+  limits:
+  - - 0
+    - 38
+  - - 0
+    - 54
+  name: BU MeaSUREs GLANCE Grids V01 - EU
+  res:
+  - 30
+  - 30
+  size:
+  - 5000
+  - 5000
+  ul:
+  - -5505560.0
+  - 3346245.0
+NA:
+  crs: PROJCS["BU MEaSUREs Lambert Azimuthal Equal Area - NA - V01",GEOGCS["GCS_WGS_1984",DATUM["D_WGS_1984",SPHEROID["WGS_1984",6378137.0,298.257223563]],PRIMEM["Greenwich",0.0],UNIT["degree",0.0174532925199433]],PROJECTION["Lambert_Azimuthal_Equal_Area"],PARAMETER["false_easting",0.0],PARAMETER["false_northing",0.0],PARAMETER["longitude_of_center",-100],PARAMETER["latitude_of_center",50],UNIT["meter",1.0]]
+  limits:
+  - - 0
+    - 64
+  - - 0
+    - 84
+  name: BU MeaSUREs GLANCE Grids V01 - NA
+  res:
+  - 30
+  - 30
+  size:
+  - 5000
+  - 5000
+  ul:
+  - -7633670.0
+  - 5076465.0
+OC:
+  crs: PROJCS["BU MEaSUREs Lambert Azimuthal Equal Area - OC - V01",GEOGCS["GCS_WGS_1984",DATUM["D_WGS_1984",SPHEROID["WGS_1984",6378137.0,298.257223563]],PRIMEM["Greenwich",0.0],UNIT["degree",0.0174532925199433]],PROJECTION["Lambert_Azimuthal_Equal_Area"],PARAMETER["false_easting",0.0],PARAMETER["false_northing",0.0],PARAMETER["longitude_of_center",135],PARAMETER["latitude_of_center",-15],UNIT["meter",1.0]]
+  limits:
+  - - 0
+    - 78
+  - - 0
+    - 113
+  name: BU MeaSUREs GLANCE Grids V01 - OC
+  res:
+  - 30
+  - 30
+  size:
+  - 5000
+  - 5000
+  ul:
+  - -6961010.0
+  - 4078425.0
+SA:
+  crs: PROJCS["BU MEaSUREs Lambert Azimuthal Equal Area - SA - V01",GEOGCS["GCS_WGS_1984",DATUM["D_WGS_1984",SPHEROID["WGS_1984",6378137.0,298.257223563]],PRIMEM["Greenwich",0.0],UNIT["degree",0.0174532925199433]],PROJECTION["Lambert_Azimuthal_Equal_Area"],PARAMETER["false_easting",0.0],PARAMETER["false_northing",0.0],PARAMETER["longitude_of_center",-60],PARAMETER["latitude_of_center",-15],UNIT["meter",1.0]]
+  limits:
+  - - 0
+    - 68
+  - *id001
+  name: BU MeaSUREs GLANCE Grids V01 - SA
+  res:
+  - 30
+  - 30
+  size:
+  - 5000
+  - 5000
+  ul:
+  - -6918770.0
+  - 4899705.0
