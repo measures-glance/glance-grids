@@ -1,0 +1,14 @@
+name: glance_grids
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - click
+  - fiona
+  - gdal
+  - geopandas
+  - jupyterlab
+  - rasterio
+  - shapely
+  - pyyaml
+  - xarray
