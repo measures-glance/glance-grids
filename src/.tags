@@ -1,0 +1,38 @@
+!_TAG_FILE_SORTED	2	/0=unsorted, 1=sorted, 2=foldcase/
+click	/home/ceholden/Documents/MEaSUREs/glance-grids/src/generate_grids.py	/^import click$/;"	i	language:Python
+clone_equi7	/home/ceholden/Documents/MEaSUREs/glance-grids/src/generate_grids.py	/^def clone_equi7(dest=None):$/;"	f	language:Python
+CONTINENTS	/home/ceholden/Documents/MEaSUREs/glance-grids/src/generate_grids.py	/^CONTINENTS = list(PROJ_PARAMS_STEINWAND.keys())$/;"	v	language:Python
+create_grids	/home/ceholden/Documents/MEaSUREs/glance-grids/src/generate_grids.py	/^def create_grids():$/;"	f	language:Python
+CRS	/home/ceholden/Documents/MEaSUREs/glance-grids/src/generate_grids.py	/^from rasterio.crs import CRS$/;"	i	language:Python
+find_equi7	/home/ceholden/Documents/MEaSUREs/glance-grids/src/generate_grids.py	/^def find_equi7(repo=None):$/;"	f	language:Python
+fiona	/home/ceholden/Documents/MEaSUREs/glance-grids/src/generate_grids.py	/^import fiona$/;"	i	language:Python
+GLANCE_GRIDS_LIMITS	/home/ceholden/Documents/MEaSUREs/glance-grids/src/generate_grids.py	/^GLANCE_GRIDS_LIMITS = {$/;"	v	language:Python
+GLANCE_GRIDS_NAME	/home/ceholden/Documents/MEaSUREs/glance-grids/src/generate_grids.py	/^GLANCE_GRIDS_NAME = {$/;"	v	language:Python
+GLANCE_GRIDS_RESOLUTION	/home/ceholden/Documents/MEaSUREs/glance-grids/src/generate_grids.py	/^GLANCE_GRIDS_RESOLUTION = [30, 30]$/;"	v	language:Python
+GLANCE_GRIDS_SIZE	/home/ceholden/Documents/MEaSUREs/glance-grids/src/generate_grids.py	/^GLANCE_GRIDS_SIZE = [5000, 5000]$/;"	v	language:Python
+GLANCE_GRIDS_UL_XY	/home/ceholden/Documents/MEaSUREs/glance-grids/src/generate_grids.py	/^GLANCE_GRIDS_UL_XY = {$/;"	v	language:Python
+GLANCE_GRID_CRS_WKT	/home/ceholden/Documents/MEaSUREs/glance-grids/src/generate_grids.py	/^GLANCE_GRID_CRS_WKT = {$/;"	v	language:Python
+gpd	/home/ceholden/Documents/MEaSUREs/glance-grids/src/generate_grids.py	/^import geopandas as gpd$/;"	i	language:Python
+grids	/home/ceholden/Documents/MEaSUREs/glance-grids/src/generate_grids.py	/^        from stems.gis import grids$/;"	i	language:Python
+help	/home/ceholden/Documents/MEaSUREs/glance-grids/src/generate_grids.py	/^              help='Equi7Grid repo location (will try to clone if needed)')$/;"	v	language:Python
+make_grids	/home/ceholden/Documents/MEaSUREs/glance-grids/src/generate_grids.py	/^def make_grids(dest, equi7_repo):$/;"	f	language:Python
+Path	/home/ceholden/Documents/MEaSUREs/glance-grids/src/generate_grids.py	/^from pathlib import Path$/;"	i	language:Python
+prepare_crs_wkt	/home/ceholden/Documents/MEaSUREs/glance-grids/src/generate_grids.py	/^def prepare_crs_wkt(wkt):$/;"	f	language:Python
+PROJ_PARAMS_STEINWAND	/home/ceholden/Documents/MEaSUREs/glance-grids/src/generate_grids.py	/^PROJ_PARAMS_STEINWAND = {$/;"	v	language:Python
+rasterio	/home/ceholden/Documents/MEaSUREs/glance-grids/src/generate_grids.py	/^import rasterio$/;"	i	language:Python
+REPO_EQUI7	/home/ceholden/Documents/MEaSUREs/glance-grids/src/generate_grids.py	/^REPO_EQUI7 = 'https:\/\/github.com\/TUW-GEO\/Equi7Grid.git'$/;"	v	language:Python
+run_ogr2ogr	/home/ceholden/Documents/MEaSUREs/glance-grids/src/generate_grids.py	/^def run_ogr2ogr(src, dst, dst_crs=None, dst_format='ESRI Shapefile',$/;"	f	language:Python
+safe_unary_union	/home/ceholden/Documents/MEaSUREs/glance-grids/src/generate_grids.py	/^def safe_unary_union(obj, max_tries=5):$/;"	f	language:Python
+shape	/home/ceholden/Documents/MEaSUREs/glance-grids/src/generate_grids.py	/^from shapely.geometry import shape$/;"	i	language:Python
+STRtree	/home/ceholden/Documents/MEaSUREs/glance-grids/src/generate_grids.py	/^from shapely.strtree import STRtree$/;"	i	language:Python
+subprocess	/home/ceholden/Documents/MEaSUREs/glance-grids/src/generate_grids.py	/^import subprocess$/;"	i	language:Python
+switch_crs_type	/home/ceholden/Documents/MEaSUREs/glance-grids/src/generate_grids.py	/^def switch_crs_type(crs_type, grid):$/;"	f	language:Python
+transform	/home/ceholden/Documents/MEaSUREs/glance-grids/src/generate_grids.py	/^from rasterio.warp import transform_bounds, transform$/;"	i	language:Python
+transform_bounds	/home/ceholden/Documents/MEaSUREs/glance-grids/src/generate_grids.py	/^from rasterio.warp import transform_bounds, transform$/;"	i	language:Python
+version	/home/ceholden/Documents/MEaSUREs/glance-grids/src/generate_grids.py	/^                                        version=VERSION,$/;"	v	language:Python
+VERSION	/home/ceholden/Documents/MEaSUREs/glance-grids/src/generate_grids.py	/^VERSION = 'V01'$/;"	v	language:Python
+warnings	/home/ceholden/Documents/MEaSUREs/glance-grids/src/generate_grids.py	/^import warnings$/;"	i	language:Python
+write_crs_wkt	/home/ceholden/Documents/MEaSUREs/glance-grids/src/generate_grids.py	/^def write_crs_wkt(grids, dest_dir):$/;"	f	language:Python
+write_grid_geom	/home/ceholden/Documents/MEaSUREs/glance-grids/src/generate_grids.py	/^def write_grid_geom(grid, land, dst, dst_format):$/;"	f	language:Python
+write_grid_specs	/home/ceholden/Documents/MEaSUREs/glance-grids/src/generate_grids.py	/^def write_grid_specs(grids, dest):$/;"	f	language:Python
+yaml	/home/ceholden/Documents/MEaSUREs/glance-grids/src/generate_grids.py	/^import yaml$/;"	i	language:Python
