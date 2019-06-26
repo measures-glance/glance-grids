@@ -190,7 +190,7 @@ def prepare_crs_wkt(wkt):
 
 
 def run_ogr2ogr(src, dst, dst_crs=None, dst_format='ESRI Shapefile',
-                overwrite=True):
+                overwrite=True, fix_antimeridian=False):
     """ Run ogr2ogr on a vector file
     """
     cmd = [
@@ -201,7 +201,16 @@ def run_ogr2ogr(src, dst, dst_crs=None, dst_format='ESRI Shapefile',
         cmd.append('-overwrite')
     if dst_crs:
         cmd.extend(['-t_srs', prepare_crs_wkt(dst_crs.wkt)])
+
     cmd.extend([str(dst), str(src)])
+
+    if fix_antimeridian:
+        # OC continent tiles have 1 tile with null geom in WGS84
+        # so we skip WRITE_BBOX (null extent breaks it in QGIS)
+        cmd.extend([
+            '-lco', 'RFC7946=TRUE',
+            # '-lco', 'WRITE_BBOX=TRUE'
+        ])
 
     # ogr2ogr won't overwrite with geojson
     if dst.exists() and dst.suffix.lower() == '.geojson' and overwrite:
@@ -388,7 +397,8 @@ def make_grids(dest, equi7_repo):
 
         click.echo('    Writing GEOG version of tiles')
         dst_filename_geog = run_ogr2ogr(dst_filename, dst_filename_geog,
-                                        dst_crs=dst_crs, dst_format=dst_format)
+                                        dst_crs=dst_crs, dst_format=dst_format,
+                                        fix_antimeridian=True)
 
     click.echo('Complete')
 
