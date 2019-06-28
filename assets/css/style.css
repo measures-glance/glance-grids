@@ -10,11 +10,9 @@
   background-color: #333;
 }
 
-li {
-  float: left;
-}
 
 .menu_element, .dropbtn {
+  float: left;
   display: inline-block;
   color: white;
   text-align: center;
