@@ -4,16 +4,8 @@ layout: default
 
 # Parameters
 
-## Parameter References
-* name - "Grid name"
-* ul - "Upper left X/Y"
-* crs - "Coordinate Reference System"
-* res - "Pixel size X/Y" 
-* size - "Tile size X/Y"
-* limits - "Tile grid limits (row range, column range)"
-
 ## CRS Table
-<table style="table-layout: fixed; width: 100%">
+<table style="table-layout: fixed; width: 100%; font-family: 'Roboto Mono', monospace;">
 <th>Continent Name</th>
 <th>CRS</th>
 {% for continent in site.data.GLANCE_param %}
@@ -29,53 +21,53 @@ layout: default
 </table>
 
 
-## Individual Continents
+## Continents
 {% for continent in site.data.GLANCE_param %}
 {% assign cont_name = continent[0] %}
 {% assign cont_data = continent[1] %}
 ### {{ cont_name }}
-<table style="table-layout: fixed; width: 100%">
+<table style="table-layout: fixed; width: 100%; font-family: 'Roboto Mono', monospace;">
     <tr>
-	    <th>name</th>
+	    <th>Grid Name</th>
 	    <td>{{ cont_data.name }}</td>
 	</tr>
 	<tr>
-        <th>ul</th>
+        <th>Upper Left</th>
         <td>
             <ul>
-                <li>{{ cont_data.ul[0] }}</li>
-                <li>{{ cont_data.ul[1] }}</li>
+                <li> X: {{ cont_data.ul[0] }}</li>
+                <li> Y: {{ cont_data.ul[1] }}</li>
             </ul>    	
         </td>
     </tr>
     <tr>
-        <th>crs</th>
+        <th>CRS</th>
         <td style="word-break:break-all;">{{cont_data.crs}}</td>
     </tr>
     <tr>
-        <th>res</th>
+        <th>Pixel Size</th>
         <td>
             <ul>
-                <li>{{ cont_data.res[0] }}</li>
-                <li>{{ cont_data.res[1] }}</li>
+                <li> X: {{ cont_data.res[0] }}</li>
+                <li> Y: {{ cont_data.res[1] }}</li>
             </ul>    	
     	</td>
     </tr>
     <tr>
-        <th>size</th>
+        <th>Tile Size</th>
         <td>
             <ul>
-                <li>{{ cont_data.size[0] }}</li>
-                <li>{{ cont_data.size[1] }}</li>
+                <li> X: {{ cont_data.size[0] }}</li>
+                <li> Y: {{ cont_data.size[1] }}</li>
             </ul>    	
     	</td>
     </tr>
     <tr>
-    <th>limits</th>
+    <th>Tile Grid Limits</th>
     <td>
             <ul>
-                <li>({{ cont_data.limits[0][0] }} , {{ cont_data.limits[0][1] }})</li>
-                <li>({{ cont_data.limits[1][0] }} , {{ cont_data.limits[1][1] }})</li>
+                <li> Row Range: ({{ cont_data.limits[0][0] }} , {{ cont_data.limits[0][1] }})</li>
+                <li> Col Range: ({{ cont_data.limits[1][0] }} , {{ cont_data.limits[1][1] }})</li>
             </ul>    	
     	</td>
     </tr>
