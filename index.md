@@ -2,13 +2,10 @@
 layout: default
 ---
 
-# This is a page
+# Home
 
-Here is a paragraph
+## GLANCE Grids
 
+The BU MEaSUREs "GLANCE" project is using a system of seven continental grids that use Lambert Azimuthal Equal Area projections parameterized to minimize distortion for each continent. The Lambert Azimuthal Equal Area projection has been used in past global land cover mapping efforts [(Loveland et al, 2000)](references) and has been recommended for continental scale maps [(Steinwand, Hutchinson, and Snyder, 1995)](references). This tile gridding system is also influenced by the Equi7 grid system, which uses seven Equidistant Azimuthal projections [(Bauer-Marschallinger, Sabel, and Wagner, 2014)](references). Although we chose different projections, our project has adopted the same land/water definitions (based on the free World Borders Dataset) and grid zone definitions. The tiling grid system is based on a 30m pixel and with tiles 5000x5000 pixels in size.
 
-## Grids
-
-### Africa
-
-<script src="https://embed.github.com/view/geojson/measures-glance/glance-grids/v01/data/spatial/AF/GEOG/GLANCE_V01_AF_GEOG_TILE.geojson">
+![Image of the continents](/assets/images/continents.png)
